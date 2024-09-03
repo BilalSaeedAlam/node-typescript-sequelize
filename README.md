@@ -118,6 +118,4 @@ Feel free to contribute by submitting issues, suggesting features, or creating p
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
----
-
-**If you like this project, please give a star to this repository!**
+## ⭐️ If you like this project, please give a star to this repository! ⭐️⭐️⭐️
