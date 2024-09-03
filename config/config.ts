@@ -39,9 +39,8 @@ const config: Record<Environment, DBConfig> = {
     dialect: "postgres",
   },
 };
-
 // Ensure that environment is correctly typed
 const environment: Environment = (process.env.NODE_ENV as Environment) || "development";
 
-// Export the appropriate configuration based on the current environment
-export default config[environment];
+// Export using CommonJS module.exports
+module.exports = config[environment];

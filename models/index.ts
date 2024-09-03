@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-import { Sequelize, DataTypes } from "sequelize"; // Correctly import DataTypes
-import config from "../config/config";
+import { Sequelize, DataTypes } from "sequelize";
+const config = require("../config/config"); // Use CommonJS-style import for the config file
 
 const basename = path.basename(__filename);
 const db: any = {};
