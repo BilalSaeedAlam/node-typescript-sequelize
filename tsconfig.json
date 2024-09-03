@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES6",                            // Set the ECMAScript target version
-    "module": "commonjs",                        // Set the module system to CommonJS
-    "strict": true,                              // Enable all strict type-checking options
-    "esModuleInterop": true,                     // Enables emit interoperability between CommonJS and ES Modules
-    "skipLibCheck": true,                        // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true,    // Ensure consistent casing in import paths
-    "outDir": "./dist",                          // Output directory for all compiled JavaScript files
-    "rootDir": ".",                              // Set root directory of TypeScript source files to the project root
-    "baseUrl": ".",                              // Base directory to resolve non-relative module names
-    "paths": {                                   // Set up path mapping for module resolution
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": ".",  // Ensure that rootDir is set to the root level to include all files
+    "baseUrl": ".",
+    "paths": {
       "@models/*": ["models/*"],
       "@config/*": ["config/*"],
       "@controllers/*": ["src/controllers/*"],
@@ -18,14 +18,14 @@
     }
   },
   "include": [
-    "src/**/*.ts",                               // Include all TypeScript files in the src directory
-    "models/**/*.ts",                            // Include all TypeScript files in the models directory
-    "migrations/**/*.ts",                        // Include all TypeScript files in the migrations directory
-    "config/**/*.ts",                            // Include all TypeScript files in the config directory
-    "seeders/**/*.ts"                            // Include all TypeScript files in the seeders directory
+    "src/**/*.ts",    // Ensure src directory is included
+    "models/**/*.ts",
+    "migrations/**/*.ts",
+    "config/**/*.ts",
+    "seeders/**/*.ts"
   ],
   "exclude": [
-    "node_modules",                              // Exclude the node_modules directory
-    "dist"                                       // Exclude the output directory for compiled JavaScript files
+    "node_modules",
+    "dist"
   ]
 }

@@ -12,7 +12,7 @@ interface DBConfig {
   password: string;
   database: string;
   host: string;
-  dialect: string;
+  dialect: "postgres" | "mysql" | "sqlite" | "mariadb" | "mssql"; // Add your dialect type here
 }
 
 // Define the configuration object with a Record type
